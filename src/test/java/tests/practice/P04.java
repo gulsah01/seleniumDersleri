@@ -23,5 +23,6 @@ Print the result
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.navigate().to("https://testpages.herokuapp.com/styled/index.html");
 
+
     }
 }
