@@ -33,6 +33,7 @@ public class C03_LinkTest_PartialLinkText {
         // driver.findElement(By.partialLinkText("Gift")).click(); // calisti
         driver.findElement(By.partialLinkText("Gif")).click();
 
+
         // linkin bizi Gift Cards sayfasina yonlendirdigini test edin
 
         // bunun icin Gift Cards sayfasi acildiginda

@@ -1,5 +1,6 @@
 package tests.practice;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -22,8 +23,12 @@ Print the result
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.navigate().to("https://testpages.herokuapp.com/styled/index.html");
-
-
+        driver.findElement(By.id("calculatetest")).click();
+        driver.findElement(By.id("number1")).sendKeys("100");
+        driver.findElement(By.id("number2")).sendKeys("50");
+        driver.findElement(By.className("styled-click-button")).click();
+        System.out.println(driver.findElement(By.id("answer")).getText());
+        driver.close();
 
 
     }
